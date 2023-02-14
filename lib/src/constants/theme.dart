@@ -6,7 +6,7 @@ class FutureAppTheme {
     brightness: Brightness.light,
     backgroundColor: Colors.white,
     textTheme: TextTheme(
-      headline1: TextStyles.fw900(48.00, AppColor.black2, height: 1),
+      displayLarge: TextStyles.fw900(48.00, AppColor.black2, height: 1),
       headline2: TextStyles.fw600(20.00, AppColor.black2),
     ),
   );

@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: Stack(
         children: [
           AnimatedPositioned(
@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   const SizedBox(height: 15),
                   Text(
                     'FUTURE',
-                    style: Theme.of(context).textTheme.headline1,
+                    style: Theme.of(context).textTheme.displayLarge,
                   ),
                 ],
               ),

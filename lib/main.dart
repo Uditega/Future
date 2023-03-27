@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:future/src/constants/theme.dart';
 import 'package:future/src/pages/welcome/ui/splash_screen.dart';
 
 void main() {
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: FutureAppTheme.lightTheme,
+      darkTheme: FutureAppTheme.darkTheme,
+      themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
     );
   }
